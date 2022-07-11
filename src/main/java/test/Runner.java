@@ -21,7 +21,7 @@ public class Runner {
         ThreadPoolTaskExecutor taskExecutor = createBlockingAndProcessorLimitedTaskExecutor();
         int counter = 0;
         Stopwatch stopwatch = Stopwatch.createStarted();
-        int iterationCount = 1;
+        int iterationCount = Integer.parseInt(System.getProperty("iteration.count"));
         CountDownLatch countDownLatch = new CountDownLatch(iterationCount);
         while (counter < iterationCount) {
             taskExecutor.execute(() -> {
