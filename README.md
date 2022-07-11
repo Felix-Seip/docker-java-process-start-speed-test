@@ -76,3 +76,7 @@ SSD: 512 GB
 ```
 
 It should also be noted that these performance problems were also noticed on MacBook Pros with an Intel Chip.
+
+## Extra Sidenotes
+This repository was tested with various docker daemon parameters. 
+The number of CPUs, RAM and SWAP were intensely tested without any big differences to the above mentioned results.
